@@ -1,26 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+//BOOTSTRAP IMPORT
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
+
+import ProfileCard from './react-bootstrap/bootstrap-button/ProfileCard';
+import LoginForm from './react-css/external-css/LoginForm';
+import QuoteGenerator from './react-css/inline-css/QuoteGenerator';
+import ThemeChanger from './react-css/internal-css/ThemeChanger';
+import AboutReact from './react-module-css/AboutReact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <h4>FSD-RJS SARAVANAN BATCH</h4>
-    <ol>
-      <li>Laxmi Roshini</li>
-      <li>Pavithra</li>
-      <li>Jesintha</li>
-      <li>Shenbagam</li>
-      <li>Prem Kumar</li>
-      <li>Marimuthu</li>
-      <li>Shreepal</li>
-    </ol>
+    <AboutReact/>
+    <ThemeChanger/> 
+    <LoginForm/> 
+    <ProfileCard/> 
+    <QuoteGenerator/>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
